@@ -331,10 +331,10 @@ body {
   }
 }
 
-@media (max-height: 700px) {
-  .info {
-    margin-top: 110px;
-    position: absolute;
-    padding: 0 40px;
+@media(max-width: 650px){
+  .navbar {
+    padding: 5px 10px;
   }
 }
+
+

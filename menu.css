@@ -8,7 +8,7 @@
   background-color: rgb(246, 249, 229);
   box-shadow: 4px 0px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 30px 30px;
-  text-align: left;
+  text-align: center;
 }
 
 body {
@@ -127,7 +127,6 @@ body {
 }
 
 .theShop .secondTab .products {
-  align-items: flex-start;
   width: 90%;
 }
 
@@ -162,7 +161,6 @@ body {
 }
 
 @media (max-width: 818px) {
-  /* Make getCard tabs take 90% width */
   .theShop .secondTab .getCard {
     margin: 20px 0;
     width: 90%;
@@ -175,11 +173,10 @@ body {
     flex-direction: column;    
   }
 
-  /* Adjust menu list to be scrollable */
   .theShop #menuList {
     padding: 0;
-    overflow-x: auto; /* Horizontal scrolling for smaller screens */
-    white-space: nowrap; /* Prevent items from wrapping to the next line */
+    overflow-x: auto; 
+    white-space: nowrap; 
     display: flex;
     justify-content: flex-start;
     gap: 10px;
@@ -188,10 +185,10 @@ body {
   .theShop #menuList li {
     border: 1px solid black;
     height: 40px;
-    padding: 0 20px; /* Adjust padding for smaller screens */
-    width: auto; /* Allow width to adjust dynamically */
-    min-width: 100px; /* Minimum width to prevent collapsing */
-    display: inline-flex; /* Ensure items are horizontally aligned */
+    padding: 0 20px; 
+    width: auto; 
+    min-width: 100px; 
+    display: inline-flex; 
     align-items: center;
     justify-content: center;
   }
@@ -200,7 +197,6 @@ body {
     display: none;
   }
 
-  /* Adjust general container padding */
   .theShop .container {
     padding: 0 10px;
   }
