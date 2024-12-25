@@ -1,0 +1,221 @@
+.getCard {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(246, 249, 229);
+  box-shadow: 4px 0px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 30px 30px;
+  text-align: left;
+}
+
+body {
+  background-color: rgb(246, 249, 229);
+}
+
+.theShop {
+  padding-bottom: 30px;
+}
+
+.theShop .container {
+  padding: 0 20px;
+}
+
+
+.theShop #menuList {
+  padding: 0 50px;
+  justify-content: center;
+  display: flex;
+  list-style: none;
+  margin: 40px 0;
+}
+
+#topImage{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.theShop #menuList li{
+    border: 1px solid black;
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    margin: 0 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.theShop #menuList li div {
+    position: absolute;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background-color: black;
+    transition: ease-in-out 0.3s;
+    z-index: -1;
+    border-radius: 10px;
+
+  }
+
+  .theShop #menuList li:hover div {
+    width: 100%;
+  }
+
+  .theShop #menuList li:hover  {
+   color: white;
+  }
+
+.theShop .header {
+  font-size: 25px;
+  font-weight: 900;
+  color: var(--textsColor);
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.theShop .getCard p {
+  font-size: 20px;
+  color: var(--textsColor);
+  font-weight: 500;
+}
+
+.theShop .getCard button {
+  padding: 10px 70px;
+  background-color: var(--textsColor);
+  border: none;
+  color: whitesmoke;
+}
+
+.theShop .getCard img {
+  width: 170px;
+}
+
+.theShop .sessions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.theShop .secondTab .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 0px;
+  width: 100%;
+}
+
+.theShop .secondTab .getCard {
+  margin: 0 20px;
+}
+
+.theShop .secondTab .itemHeader {
+  font-size: 25px;
+  color: var(--textsColor);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.theShop .secondTab .products {
+  align-items: flex-start;
+  width: 90%;
+}
+
+.theShop .secondTab .productLabel {
+  font-weight: 700;
+}
+
+.theShop .secondTab .infoNote {
+  font-size: 12px;
+}
+
+.theShop .secondTab img {
+  width: 50%;
+  max-height: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.theShop .secondTab .imageContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theShop .secondTab button {
+  width: 100%;
+  padding: 10px 0;
+  background-color: var(--textsColor);
+  border: none;
+  color: white;
+}
+
+@media (max-width: 818px) {
+  /* Make getCard tabs take 90% width */
+  .theShop .secondTab .getCard {
+    margin: 20px 0;
+    width: 90%;
+  }
+
+  .theShop .secondTab .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+  }
+
+  /* Adjust menu list to be scrollable */
+  .theShop #menuList {
+    padding: 0;
+    overflow-x: auto; /* Horizontal scrolling for smaller screens */
+    white-space: nowrap; /* Prevent items from wrapping to the next line */
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .theShop #menuList li {
+    border: 1px solid black;
+    height: 40px;
+    padding: 0 20px; /* Adjust padding for smaller screens */
+    width: auto; /* Allow width to adjust dynamically */
+    min-width: 100px; /* Minimum width to prevent collapsing */
+    display: inline-flex; /* Ensure items are horizontally aligned */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .theShop #menuList::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Adjust general container padding */
+  .theShop .container {
+    padding: 0 10px;
+  }
+}
+
+
+@media (max-width: 1040px) {
+  .theShop .secondTab .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 840px) {
+  .theShop .secondTab .container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0px;
+  }
+}

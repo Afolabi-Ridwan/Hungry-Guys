@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>BabzFashion</title>
+    
+    <link rel="stylesheet" href="secondpage.css">
+</head>
+<body>
+    <section id="third-page">
+        <table>
+  
+          <tr>
+            <th> Item </th>
+            <th> Properties </th>
+            <th> Number of Items </th>
+            <th> Costs($) </th>                    
+          </tr>
+          <div id="men">
+          <tr>
+            <td class="item-table"> Men </td>
+            <td> <ul class="properties"> 
+              
+              <div class="property-info">
+    
+                <div class="menCheckbox">
+                  <div>
+                <input class="men" id="A" name="Gender" type="radio" value="200"  required>
+                <label for="A"> Fitty Lell Men's Slim... </label>
+                </div>
+              
+                <p class="price"> $200</p>
+                </div>
+                
+                <div class="menCheckbox">
+                <div>
+                <input class="men" id="B" name="Gender" type="radio" value="150" required>
+                <label for="B"> BURBERRY Reepham Shi </label>
+                </div>
+                <p class="price"> $150 </p>
+            
+                </div>
+
+                <div class="menCheckbox">
+                <div>
+                <input class="men" id="C" name="Gender" type="radio" value="150" required>
+                <label for="C"> Men's Corporate Suit </label>
+                </div>
+                <p class="price"> $150 </p>  
+                </div>
+
+                <div class="menCheckbox">
+                <div>
+                <input class="men" id="D" name="Gender" value="220" type="radio" required>
+                <label for="D"> Das Solid Men RN... </label>
+                </div>
+                <p class="price"> $220</p>
+              
+                </div>
+
+                <div class="menCheckbox" >
+                <div class="none">
+                <input class="men" value="0" id="E" name="Gender" type="radio" required>
+                <label for="E" > None </label>
+                </div>
+                </div>
+              </div>
+              
+            </ul>  
+          </td>
+          <td class="number">
+            <p class="numbers" >
+              <div class="dropdown-content">
+
+              <select name="Unit" id="menUnit" onchange="myFunction()">
+                <option value="">Unit</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+              </select>
+            </p>
+          </td>
+  
+          <td>
+            <p class="menCost"> </p>
+          </td>
+          </tr>
+  </div>
+          <tr>
+            <td class="item-table"> Women </td>
+            
+              <td> <ul class="properties"> 
+
+                <div class="property-info">
+      
+                  <div class="womenCheckbox">
+                    <div>
+                  <input class="women" id="A" name="Gender" type="radio" value="395" required>
+                  <label for="A"> Emma Silk Dress </label>
+                  </div>
+                
+                  <p class="price"> $395</p>
+                  </div>
+                  
+                  <div class="womenCheckbox">
+                  <div>
+                  <input class="women" id="B" name="Gender" value="1050" type="radio" required>
+                  <label for="B"> ALAIA Edition Zip... </label>
+                  </div>
+                  <p class="price"> $1050 </p>
+              
+                  </div>
+  
+                  <div class="womenCheckbox">
+                  <div>
+                  <input class="women" value="328"  id="C" name="Gender" type="radio" required>
+                  <label for="C"> ALEXIS Lune Dress </label>
+                  </div>
+                  <p class="price"> $328 </p>  
+                  </div>
+  
+                  <div class="womenCheckbox">
+                  <div>
+                  <input class="women" value="430" id="D" name="Gender" type="radio" required>
+                  <label for="D"> AGENCE Karly Ruched Dress </label>
+                  </div>
+                  <p class="price"> $430</p>
+                
+                  </div>
+  
+                  <div class="womenCheckbox" >
+
+                  <div class="none">
+
+                  <input class="women" value="0" id="E" name="Gender" type="radio" required>
+                  <label for="E" > None </label>
+
+                  </div>
+
+                  </div>
+                </div>
+                
+              </ul>  
+            </td>
+            </ul>  
+          </td>
+          <td class="number">
+            <p class="numbers" >
+              <div class="dropdown-content">
+
+                <select name="Unit" id="womenUnit" onchange="myFunction()">
+                  <option value="">Unit</option>
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                  <option value="">4</option>
+                </select>
+                </div>
+            </p>
+          </td>
+  
+          <td>
+            <p class="womenCost"> </p>
+          </td>
+          </tr>
+  
+          <tr>
+            <td class="item-table"> Kids </td>
+            <td> <ul class="properties"> 
+
+            <div class="property-info">
+  
+              <div class="kidsCheckbox">
+                <div>
+              <input class="kids" value="41.99"  id="A" name="Gender" type="radio" required>
+              <label for="A"> Children Elegant Dress </label>
+              </div>
+            
+              <p class="price"> $41.99</p>
+              </div>
+              
+              <div class="kidsCheckbox">
+              <div>
+              <input class="kids" value="48.20" id="B" name="Gender" type="radio" required>
+              <label for="B"> NNJXD Flower Girl Dress... </label>
+              </div>
+              <p class="price"> $48.20 </p>
+          
+              </div>
+
+              <div class="kidsCheckbox">
+              <div>
+              <input class="kids" value="54.60" id="C" name="Gender" type="radio" required>
+              <label for="C">  RBarBary Yellow </label>
+              </div>
+              <p class="price"> $54.60 </p>  
+              </div>
+
+              <div class="kidsCheckbox">
+              <div>
+              <input class="kids" value="100" id="D" name="Gender" type="radio" required>
+              <label for="D">  RBarBary Yellow Stray... </label>
+              </div>
+              <p class="price"> $100</p>
+            
+              </div>
+
+              <div class="kidsCheckbox" >
+
+              <div class="none">
+
+              <input class="kids" value="0" id="E" name="Gender" type="radio" required>
+              <label for="E" > None </label>
+
+              </div>
+
+              </div>
+            </div>
+            
+          </ul>  
+        </td>
+          <td class="number">
+            <p class="numbers" >
+              <div class="dropdown-content">
+
+                <select name="Unit" id="kidsUnit" onchange="myFunction()">
+                  <option value="">Unit</option>
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                  <option value="">4</option>
+                </select>
+                </div>
+            </p>
+
+          </td>
+  
+          <td>
+            <p class="kidsCost"> </p>
+          </td>
+          </tr>
+  
+          <tr>
+            <td class="item-table"> Jewelry </td>
+            
+
+          <td> <ul class="properties"> 
+
+            <div class="property-info">
+  
+              <div class="jewelryCheckbox">
+                <div>
+              <input class="jewelry" value="241.00" id="A" name="Gender" type="radio" required>
+              <label for="A"> SOLIS 18KT GOLD...  </label>
+              </div>
+            
+              <p class="price"> $241.00</p>
+              </div>
+              
+              <div class="jewelryCheckbox">
+              <div>
+              <input class="jewelry" value="48.20" id="B" name="Gender" type="radio" required>
+              <label for="B"> REGINA 9KT GOLD... </label>
+              </div>
+              <p class="price"> $48.20 </p>
+          
+              </div>
+
+              <div class="jewelryCheckbox">
+              <div>
+              <input class="jewelry" value="719" id="C" name="Gender" type="radio" required>
+              <label for="C">  Rolex Daytona </label>
+              </div>
+              <p class="price"> $719 </p>  
+              </div>
+
+              <div class="jewelryCheckbox">
+              <div>
+              <input class="jewelry" value="120" id="D" name="Gender" type="radio" required>
+              <label for="D"> Men Watch And Bracelet... </label>
+              </div>
+              <p class="price"> $120</p>
+            
+              </div>
+
+              <div class="jewelryCheckbox" >
+
+              <div class="none">
+
+              <input class="jewelry" value="0" id="E" name="Gender" type="radio" required>
+              <label for="E" > None </label>
+
+              </div>
+
+              </div>
+            </div>
+            
+          </ul>  
+        </td>
+
+          <td class="number">
+            <p class="numbers" >
+                <div class="dropdown-content">
+  
+                  <select name="Unit" id="jewelryUnit" onchange="myFunction()">
+                    <option value="">Unit</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                  </select>
+                  </div>
+            </p>
+          </td>
+  
+          <td>
+            <p class="jewelryCost"> </p>
+          </td>
+          </tr>
+  
+          <tr>
+            <td>
+              <p  > Total Cost </p>
+            </td>
+            <td style="visibility: collapse">
+  
+            </td>
+  
+            <td>
+              <button class="calcBtn">calculate</button>
+            </td>
+  
+            <td id="totalAmount"></td>
+          </tr>
+        </table>
+      </section>
+
+      <script src="secondpage.js"></script>
+</body>
+</html>
