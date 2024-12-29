@@ -108,6 +108,7 @@ td {
 .calcBtn {
   padding: 5px 20px;
   margin-left: 50px;
+  cursor: pointer;
 }
 
 .item-table input {
