@@ -1,0 +1,171 @@
+body {
+  background-color: rgb(246, 249, 229);
+}
+
+#form-page {
+  display: flex;
+  justify-content: center;
+  padding-top: 15vh;
+}
+
+#form-page .property-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#form-page .price {
+  position: relative;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 80vw;
+  min-width: 1000px;
+  border-collapse: collapse;
+  margin-top: 40px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+#form-page li,
+#form-page p,
+#form-page td {
+  font-weight: bold;
+}
+
+#form-page .pizzaCheckBox,
+#form-page .saladCheckbox,
+#form-page .burgerCheckbox,
+#form-page .sandwichCheckbox,
+#form-page .friesCheckbox {
+  margin: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+#form-page .none {
+  margin-top: 15px;
+}
+
+.dropdown-content {
+  width: 175px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown-content .input {
+  background-color: white;
+  border: 0.2px solid rgb(66, 60, 60);
+  width: 140px;
+  padding: 0 45px;
+  margin: 0 25px;
+  position: relative;
+  bottom: 0.5px;
+}
+
+.dropdown-content ul {
+  width: 140px;
+  padding: 0;
+  margin: 0 20px;
+  background-color: white;
+  list-style: none;
+  display: none;
+}
+
+.dropdown-content ul.active {
+  display: block;
+}
+
+.dropdown-content li {
+  margin: 5px;
+}
+
+.dropdown-content .one.active,
+.dropdown-content .two.active,
+.dropdown-content .three.active,
+.dropdown-content .four.active {
+  background-color: blue;
+  color: white;
+  width: 130px;
+  align-items: center;
+  justify-content: center;
+}
+
+.calcBtn {
+  padding: 5px 20px;
+  margin-left: 50px;
+}
+
+.item-table input {
+  margin-left: 20px;
+}
+
+.item-table p {
+  margin-left: 20px;
+}
+
+#totalAmount {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.pizzaCost,
+.saladCost,
+.burgerCost,
+.sandwichCost,
+.friesCost {
+  background-color: black;
+  color: white;
+  padding: 5px 0px;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+}
+
+#footer {
+  text-align: center;
+  margin-top: 60px;
+  color: rgb(246, 249, 229);
+  background-color: black;
+  width: 100%;
+  padding: 50px 0;
+  position: absolute;
+}
+
+@media (max-width: 1000px) {
+  table {
+    width: 95vw;
+  }
+
+  #form-page {
+    justify-content: flex-start;
+    padding: 15vh 10px;
+    overflow-x: auto;
+  }
+
+  
+  #form-page::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (max-width: 818px) {
+  #footer {
+    font-size: 20px;
+  }
+}

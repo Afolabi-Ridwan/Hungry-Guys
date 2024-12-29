@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Hungry Guys</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="form.css">
+  <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+  <div class="navbar">
+    <div id="titleTab">
+      <img id="logo" src="image/Capture4.svg" alt="" />
+    </div>
+
+    <ul id="navbar">
+      <li id="li"><a href="index.html" id="linkTag"> Home </a>
+        <div></div>
+      </li>
+      <li id="li"><a href="menu.html" id="linkTag"> Menu </a>
+        <div id="blue"></div>
+      </li>
+      <li id="li"><a href="form.html" id="linkTag" style="font-weight: bolder;"> Form </a>
+        <div id="pink"></div>
+      </li>
+      <li id="li"><a href="contactpage.html" id="linkTag"> Contact </a>
+        <div id="green"></div>
+      </li>
+
+    </ul>
+
+    <div id="button">
+      <button>Order Now</button>
+      <div></div>
+    </div>
+
+    <div id="navigation">
+      <i id="bars" class="fa-solid fa-bars "></i>
+    </div>
+  </div>
+
+  <section id="form-page">
+    <table>
+
+      <tr>
+        <th style="padding: 20px 0;"> Item </th>
+        <th> Properties </th>
+        <th> Number of Items </th>
+        <th> Costs($) </th>
+      </tr>
+      <div id="pizza">
+        <tr>
+          <td class="item-table">
+            <input type="checkbox" id="item-pizza" value="0" />
+            Pizza
+          </td>
+
+          <td>
+            <ul class="properties">
+
+              <div class="property-info">
+
+                <div class="pizzaCheckBox">
+                  <div>
+                    <input class="pizza" id="A" name="pizzaMenu" type="radio" value="27.99" required>
+                    <label for="A"> Margherita </label>
+                  </div>
+
+                  <p class="price"> $27.99</p>
+                </div>
+
+                <div class="pizzaCheckBox">
+                  <div>
+                    <input class="pizza" id="B" name="pizzaMenu" type="radio" value="18.99" required>
+                    <label for="B"> Pepperoni </label>
+                  </div>
+                  <p class="price"> $18.99 </p>
+
+                </div>
+
+                <div class="pizzaCheckBox">
+                  <div>
+                    <input class="pizza" id="C" name="pizzaMenu" type="radio" value="19.49" required>
+                    <label for="C"> BBQ Chicken </label>
+                  </div>
+                  <p class="price"> $19.49 </p>
+                </div>
+
+                <div class="pizzaCheckBox">
+                  <div>
+                    <input class="pizza" id="D" name="pizzaMenu" value="28.49" type="radio" required>
+                    <label for="D"> Vegetarian </label>
+                  </div>
+                  <p class="price"> $28.49</p>
+
+                </div>
+
+
+                <div class="pizzaCheckBox">
+                  <div class="none">
+                    <input class="pizza" value="0" id="E" name="pizzaMenu" type="radio" required>
+                    <label for="E"> None </label>
+                  </div>
+                </div>
+              </div>
+
+            </ul>
+          </td>
+
+          <td class="number">
+            <p class="numbers">
+            <div class="dropdown-content">
+
+              <select name="Unit" onchange="myFunction()" id="pizzaUnit">
+                <option value="">Unit</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+              </select>
+              </p>
+          </td>
+
+          <td>
+            <p class="pizzaCost"> </p>
+          </td>
+        </tr>
+      </div>
+      <tr>
+        <td class="item-table">
+          <input type="checkbox" id="item-salad" value="0" />
+          Salad
+        </td>
+
+        <td>
+          <ul class="properties">
+            <div class="property-info">
+
+              <div class="saladCheckbox">
+                <div>
+                  <input class="salad" id="A" name="saladMenu" type="radio" value="16.99" required>
+                  <label for="A"> Caesar Salad </label>
+                </div>
+                <p class="price"> $16.99</p>
+              </div>
+
+              <div class="saladCheckbox">
+                <div>
+                  <input class="salad" id="B" name="saladMenu" value="17.99" type="radio" required>
+                  <label for="B"> Greek Salad </label>
+                </div>
+                <p class="price"> $17.99 </p>
+
+              </div>
+
+              <div class="saladCheckbox">
+                <div>
+                  <input class="salad" value="15.99" id="C" name="saladMenu" type="radio" required>
+                  <label for="C"> Garden Salad </label>
+                </div>
+                <p class="price"> $15.99 </p>
+              </div>
+
+              <div class="saladCheckbox">
+                <div>
+                  <input class="salad" value="28.49" id="D" name="saladMenu" type="radio" required>
+                  <label for="D"> Caprese Salad </label>
+                </div>
+                <p class="price"> $28.49</p>
+
+              </div>
+
+              <div class="saladCheckbox">
+
+                <div class="none">
+
+                  <input class="salad" value="0" id="E" name="saladMenu" type="radio" required>
+                  <label for="E"> None </label>
+
+                </div>
+
+              </div>
+            </div>
+
+          </ul>
+        </td>
+        </ul>
+        </td>
+        <td class="number">
+          <p class="numbers">
+          <div class="dropdown-content">
+
+            <select name="Unit" onchange="myFunction()" id="saladUnit">
+              <option value="">Unit</option>
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+            </select>
+          </div>
+          </p>
+        </td>
+
+        <td>
+          <p class="saladCost"> </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="item-table">
+          <input type="checkbox" id="salad-burger" value="0" />
+          Burger
+        </td>
+        <td>
+          <ul class="properties">
+
+            <div class="property-info">
+
+              <div class="burgerCheckbox">
+                <div>
+                  <input class="burger" value="28.99" id="A" name="burgerMenu" type="radio" required>
+                  <label for="A"> Classic Cheeseburger </label>
+                </div>
+
+                <p class="price"> $28.99</p>
+              </div>
+
+              <div class="burgerCheckbox">
+                <div>
+                  <input class="burger" value="19.99" id="B" name="burgerMenu" type="radio" required>
+                  <label for="B"> Bacon Burger </label>
+                </div>
+                <p class="price"> $19.99 </p>
+
+              </div>
+
+              <div class="burgerCheckbox">
+                <div>
+                  <input class="burger" value="27.09" id="C" name="burgerMenu" type="radio" required>
+                  <label for="C"> Veggie Delight </label>
+                </div>
+                <p class="price"> $27.09 </p>
+              </div>
+
+              <div class="burgerCheckbox">
+                <div>
+                  <input class="burger" value="18.29" id="D" name="burgerMenu" type="radio" required>
+                  <label for="D"> Spicy Chicken Burger </label>
+                </div>
+                <p class="price"> $18.29</p>
+
+              </div>
+
+              <div class="burgerCheckbox">
+
+                <div class="none">
+
+                  <input class="burger" value="0" id="E" name="burgerMenu" type="radio" required>
+                  <label for="E"> None </label>
+
+                </div>
+
+              </div>
+            </div>
+
+          </ul>
+        </td>
+        <td class="number">
+          <p class="numbers">
+          <div class="dropdown-content">
+
+            <select name="Unit" onchange="myFunction()" id="burgerUnit">
+              <option value="">Unit</option>
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+            </select>
+          </div>
+          </p>
+
+        </td>
+
+        <td>
+          <p class="burgerCost"> </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="item-table">
+          <input type="checkbox" id="item-fries" value="0" />
+          Fries
+        </td>
+
+
+        <td>
+          <ul class="properties">
+
+            <div class="property-info">
+
+              <div class="friesCheckbox">
+                <div>
+                  <input class="fries" value="19.59" id="A" name="friesMenu" type="radio" required>
+                  <label for="A"> Chicken Teriyaki Stir Fry </label>
+                </div>
+
+                <p class="price"> $19.59</p>
+              </div>
+
+              <div class="friesCheckbox">
+                <div>
+                  <input class="fries" value="20.19" id="B" name="friesMenu" type="radio" required>
+                  <label for="B"> Beef and Broccoli Stir Fry </label>
+                </div>
+                <p class="price"> $20.19 </p>
+
+              </div>
+
+              <div class="friesCheckbox">
+                <div>
+                  <input class="fries" value="18.89" id="C" name="friesMenu" type="radio" required>
+                  <label for="C"> Vegetarian Stir Fry </label>
+                </div>
+                <p class="price"> $18.89 </p>
+              </div>
+
+              <div class="friesCheckbox">
+                <div>
+                  <input class="fries" value="11.69" id="D" name="friesMenu" type="radio" required>
+                  <label for="D"> Shrimp Stir Fry </label>
+                </div>
+                <p class="price"> $11.69</p>
+
+              </div>
+
+              <div class="friesCheckbox">
+
+                <div class="none">
+
+                  <input class="fries" value="0" id="E" name="friesMenu" type="radio" required>
+                  <label for="E"> None </label>
+
+                </div>
+
+              </div>
+            </div>
+
+          </ul>
+        </td>
+
+
+
+        <td class="number">
+          <p class="numbers">
+          <div class="dropdown-content">
+
+            <select name="Unit" onchange="myFunction()" id="friesUnit">
+              <option value="">Unit</option>
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+            </select>
+          </div>
+          </p>
+        </td>
+
+        <td>
+          <p class="friesCost"> </p>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td class="item-table">
+          <input type="checkbox" id="item-sandwich" value="0" />
+          Sandwich
+        </td>
+
+
+        <td>
+          <ul class="properties">
+
+            <div class="property-info">
+
+              <div class="sandwichCheckbox">
+                <div>
+                  <input class="sandwich" value="27.19" id="A" name="sandwichMenu" type="radio" required>
+                  <label for="A"> Turkey Club Sandwich </label>
+                </div>
+
+                <p class="price"> $27.19</p>
+              </div>
+
+              <div class="sandwichCheckbox">
+                <div>
+                  <input class="sandwich" value="15.49" id="B" name="sandwichMenu" type="radio" required>
+                  <label for="B"> Grilled Cheese Sandwich </label>
+                </div>
+                <p class="price"> $15.49 </p>
+
+              </div>
+
+              <div class="sandwichCheckbox">
+                <div>
+                  <input class="sandwich" value="18.69" id="C" name="sandwichMenu" type="radio" required>
+                  <label for="C"> Italian Sub </label>
+                </div>
+                <p class="price"> $18.69 </p>
+              </div>
+
+              <div class="sandwichCheckbox">
+                <div>
+                  <input class="sandwich" value="26.89" id="D" name="sandwichMenu" type="radio" required>
+                  <label for="D"> Caprese Sandwich </label>
+                </div>
+                <p class="price"> $26.89</p>
+
+              </div>
+
+              <div class="sandwichCheckbox">
+
+                <div class="none">
+
+                  <input class="sandwich" value="0" id="E" name="sandwichMenu" type="radio" required>
+                  <label for="E"> None </label>
+
+                </div>
+
+              </div>
+            </div>
+
+          </ul>
+        </td>
+
+
+
+        <td class="number">
+          <p class="numbers">
+          <div class="dropdown-content">
+
+            <select name="Unit" onchange="myFunction()" id="sandwichUnit">
+              <option value="">Unit</option>
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+            </select>
+          </div>
+          </p>
+        </td>
+
+        <td>
+          <p class="sandwichCost"> </p>
+        </td>
+      </tr>
+
+      <tr style="height: 70px;">
+        <td class="item-table">
+          <p> Total Cost </p>
+        </td>
+        <td style="visibility: collapse">
+
+        </td>
+
+        <td>
+          <button class="calcBtn">calculate</button>
+        </td>
+
+        <td ><p id="totalAmount"></p></td>
+      </tr>
+    </table>
+  </section>
+
+  <h1 id="footer">Fill the form, We Got You!!!</h1>
+
+
+  <div class="mobileNavbar">
+    <div class="logo">
+
+      <div id="titleTab">
+        <a href="index.html" id="linkTag">
+          <img id="logo-img" src="image/Capture4.svg" alt="" />
+
+        </a>
+      </div>
+
+      <div class="xMark">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+    </div>
+    <ul>
+      <li> <a href="index.html" id="linkTag"> Home </a> </li>
+      <li><a href="menu.html" id="linkTag"> Menu </a></li>
+      <li><a href="form.html" id="linkTag" style="font-weight: bolder;"> Form </a> </li>
+      <li><a href="contactpage.html" id="linkTag"> Contact </a> </li>
+    </ul>
+
+    <a class="callNow" href="tel:+200-251-3060" id="linkTag">
+      <div>
+        <i class="fa-solid fa-phone" style="color: black;"></i>
+      </div>
+      <div class="number">
+        <p>+200-251-3060</p>
+      </div>
+    </a>
+  </div>
+  </div>
+
+  <script src="form.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
